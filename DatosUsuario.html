@@ -1,39 +1,129 @@
 <!DOCTYPE html>
 <head>
-    <title>Hola mundo!</title>
+    <title>Datos Usuario</title>
 </head>
 <body>
-    <div>
-        <div>
-                <li><A HREF="https://raw.githubusercontent.com/JuanDavidSaavedra/Taller2/main/Hola.txt"> Volver a Lista </A></li>
-            <h1><p><em><strong>Formularios</strong></em></p></h1>
+    <br>
+                <input type="button" style="list-style: none;" onclick="location.href='./Lista.html'" value="Volver a Lista">
+            <br>
+            <br>
+                <h2><p><strong>Rellena tu CV</strong></p></h2>
             <form action="https://uis.edu.co/es/" method="post">
-                Nombre:
-            <input type="text" name="nombre" id="nom" value="Juan David">
+                Nombre
+                <br>
+            <input type="text" name="nombre" id="nom" value="" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
             <br>
-                Sí o no:
-            <input type="checkbox" name="si o no" id="" checked="checked">
             <br>
-                Email:
-            <input type="email" name="Email" id="">
+            Apellidos
+                <br>
+            <input type="text" size="50" maxlength="100" name="apellidos" id="ape" value="" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
             <br>
-                Password:
-            <input type="password" name="Password" id="">
             <br>
-                Color:
-            <input type="color" name="Colored" id="">
+            Contraseña
+                <br>
+            <input type="text" name="contraseña" id="con" value="" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
             <br>
-                Fecha:
-            <input type="date" name="Password" id="">
             <br>
-                Archivo:
+            Confirme Contraseña
+                <br>
+            <input type="text" name="confirmeContraseña" id="confcon" value="" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
+            <br>
+            <br>
+            Identificación
+                <br>
+                <select name="TI" id="TI" value="TI" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
+                    <option>Cédula de Ciudadanía</option>
+                    <option>Tarjeta de Identidad</option>
+                    <option>Cédula de Extrangería</option>
+                    <option>DNI (País de Orígen)</option>
+                    <option>DNI (Pasaporte)</option>
+                    <option>Salvoconducto para refugiado</option>
+                    <option>Permiso Especial de Permanencia</option>
+                    <option>Permiso por Protección Temporal</option>
+                  </select>
+                <input type="number" name="identificación" id="Id" value="" style="border-radius: 5px; background-color: rgb(250, 247, 242)">
+            <br>
+            <br>
+            Sexo
+            <br>
+            <input name="Hombre" type="radio" value="" />Hombre
+            <br>
+            <input name="Mujer" type="radio" value="" />Mujer
+            <br>
+            <input name="N/P" type="radio" value="" />Prefiero no decirlo
+            <br>
+            <br>
+            Incluir mi foto
+            <br>
             <input type="file" name="Password" id="">
             <br>
-                Borrar:
-            <input type="reset" name="Reset" id="">
             <br>
-            <input type="submit" value="enviar">
+            <input type="checkbox" name="" id="" checked="checked">Estudiante....
+            <form action="" methos="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                Departamento
+                <br>
+                <select name="departamento" id="departamento" style="border-radius: 5px;" >
+                    <option value="Amazonas">- Selecciona -</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Arauca">Arauca</option>
+                    <option value="Atlántico">Atlántico</option>
+                    <option value="Bolívar">Bolívar</option>
+                    <option value="Boyacá">Boyacá</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Caquetá">Caquetá</option>
+                    <option value="Casanare">Casanare</option>
+                    <option value="Cauca">Cauca</option>
+                    <option value="Cesar">Cesar</option>
+                    <option value="Chocó">Chocó</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cundinamarca">Cundinamarca</option>
+                    <option value="Guainía">Guainía</option>
+                    <option value="Guaviare">Guaviare</option>
+                    <option value="Huila">Huila</option>
+                    <option value="La Guajira">La Guajira</option>
+                    <option value="Magdalena">Magdalena</option>
+                    <option value="Meta">Meta</option>
+                    <option value="Nariño">Nariño</option>
+                    <option value="Norte de Santander">Norte de Santander</option>
+                    <option value="Putumayo">Putumayo</option>
+                    <option value="Quindío">Quindío</option>
+                    <option value="Risaralda">Risaralda</option>
+                    <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                    <option value="Santander">Santander</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Tolima">Tolima</option>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                    <option value="Vaupés">Vaupés</option>
+                    <option value="Vichada">Vichada</option>
+                </select>                
+                <br>
+                <br>
+                Fecha de nacimiento
+                <br>
+            <input type="date" name="Password" id="">
+            <br>
+            <br>
+            Temas de interés
+            <fieldset style="width: 350px;"><legend></legend>
+            <ul id="list" style="list-style: none; overflow-y: scroll; width: 300px; height: 100px;">
+                <li>Administración de bases de datos</li>
+                <li>Análisis y programación</li>
+                <li>Arquitectura</li>
+                <li>Calidad</li>
+                <li>ERP, CRM, BUsiness Intelligenge</li>
+                <li>Intelgencia Artificial</li>
+                <li>Programación en la Web</li>
+                <li>Sistemas de Información</li>
+                <li>Fundamentos de Programación</li>
+                <li>Programación Orientada a Objetos</li>
+            </ul>
+        </fieldset>
+            <br>
+    <br>
+    <input type="button" value="Guardar Cambios">
+            <input type="reset" name="Reset" id="" value="Borrar los datos introducidos">
             </form>
-        </div>
-    </div>
 </body>
