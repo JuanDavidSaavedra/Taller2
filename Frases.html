@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frases célebres de usuario</title>
 </head>
 <body>
+    
     <input type="button" style="list-style: none;" onclick="location.href='./Lista.html'" value="Volver a Lista">
-    <form action="" methos="post">
-        <fieldset>
-            <legend>Formulario</legend>
-        <fieldset>
-        Nombre:
+    <br>
+                <h2><p><strong>Frases célebres</strong></p></h2>
+                <fieldset style="width: 500px; height: 450px;">
+    <ul id="list" style="list-style: none; overflow-y: scroll; width: 500px; height: 300px;">
+        <li>- Selecciona -</li>
         <br>
-        <input type="text" name="Nombre" id="">
+        <li><input name="Hombre" type="radio" value="" />"El buen diseño agrega valor más rápido de lo que añade costo." - Thomas C. Gale</li>
         <br>
-        Apellido:
+        <li><input name="Hombre" type="radio" value="" />"El software es como el sexo: es mejor cuando es gratis." - Linus Torvalds</li>
         <br>
-        <input type="text" name="Apellido" id="">
+        <li><input name="Hombre" type="radio" value="" />"La calidad nunca es un accidente; siempre es el resultado de un esfuerzo de la inteligencia." - John Ruskin</li>
         <br>
-        Identificación:
+        <li><input name="Hombre" type="radio" value="" />"La inteligencia artificial es la nueva electricidad." - Andrew Ng</li>
         <br>
-        <input type="text" name="Identificación" id="">
+        <li><input name="Hombre" type="radio" value="" />"El software está comiendo el mundo." - Marc Andreessen</li>
         <br>
-    </fieldset>
-        <fieldset>
-            <legend>Data User</legend>
-        User:
+        <li><input name="Hombre" type="radio" value="" />"JavaScript es el lenguaje de programación más malinterpretado." - Douglas Crockford</li>
         <br>
-        <input type="text" name="User" id="">
+        <li><input name="Hombre" type="radio" value="" />"HTML es para la estructura, CSS es para el estilo y JavaScript es para el comportamiento." - Addy Osmani</li>
         <br>
-        Password:
+        <li><input name="Hombre" type="radio" value="" />"La programación es como escribir un libro; los únicos errores son los errores gramaticales y de sintaxis." - Douglas Crockford</li>
         <br>
-        <input type="text" name="Password" id="">
+        <li><input name="Hombre" type="radio" value="" />"La simplicidad es la máxima sofisticación." - Clare Boothe Luce</li>
         <br>
-        Re password:
-        <br>
-        <input type="text" name="Re password" id="">
-        <br>
-    </fieldset>
-</fieldset>
+        <li><input name="Hombre" type="radio" value="" />"El software es un gas; se expande para llenar su contenedor." - Nathan Myhrvold</li>
+    </ul>
+    <form>
+        <label for="nombreUsuario">Nombre de usuario:</label><br>
+        <input type="text" id="nombreUsuario" name="nombreUsuario"><br><br>
+        <label for="frasePrincipal">Frase principal:</label><br>
+        <textarea id="frasePrincipal" name="frasePrincipal" rows="2" cols="30"></textarea><br><br>
+        <button type="submit">Enviar</button>
+        <button type="button">Enviar Email</button>
     </form>
 </body>
 </html>
