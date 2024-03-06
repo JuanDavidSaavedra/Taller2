@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de imágenes en HTML</title>
+</head>
+<body>
+    <input type="button" style="list-style: none;" onclick="location.href='./Lista.html'" value="Volver a Lista">
+    <br>
+    <br>
+    <h1>Ejemplo de imágenes en HTML</h1>
+
+    <!-- Imagen básica -->
+    <h2>Imagen básica:</h2>
+    <img src="imagenes/html5.jpg" alt="Descripción de la imagen">
+
+    <!-- Imagen con ancho y alto específicos -->
+    <h2>Imagen con ancho y alto específicos:</h2>
+    <img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen" width="200" height="150">
+
+    <!-- Imagen con texto alternativo -->
+    <h2>Imagen con texto alternativo:</h2>
+    <img src="ruta_de_la_imagen.jpg" alt="Texto alternativo en caso de que la imagen no se cargue">
+
+    <!-- Imagen como un enlace -->
+    <h2>Imagen como un enlace:</h2>
+    <a href="enlace_a_otra_pagina.html"><img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen"></a>
+
+    <!-- Imagen con borde -->
+    <h2>Imagen con borde:</h2>
+    <img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen" style="border: 2px solid black;">
+
+    <!-- Imagen como un mapa de imagen -->
+    <h2>Imagen como un mapa de imagen:</h2>
+    <img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen" usemap="#mapa">
+    <map name="mapa">
+        <area shape="rect" coords="0,0,50,50" href="pagina1.html" alt="Área 1">
+        <area shape="circle" coords="100,100,50" href="pagina2.html" alt="Área 2">
+    </map>
+</body>
+</html>
